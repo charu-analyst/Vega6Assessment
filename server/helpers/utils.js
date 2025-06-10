@@ -2,7 +2,6 @@ import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config();
 const jwtsecret = process.env.JWT_SECRET;
-console.log("jwtsecret==", jwtsecret);
 import cloudinary from "cloudinary";
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
