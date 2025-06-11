@@ -14,6 +14,7 @@ const {
 } = userServices;
 import Joi from "joi";
 
+
 const SignUp = async (req, res, next) => {
   const schema = Joi.object({
     email: Joi.string().email().required(),
